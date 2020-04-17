@@ -92,6 +92,28 @@ class SortingRobot:
         """
         return self._light == "ON"
 
+
+#-------------- UPER STUFF ---------------
+
+# UNDERSTAND
+# Program this ROBOT to to sort lists
+
+# The Robot is limited to the following abilites:
+#     It can move_left or it can move_right
+#     It can pickup an item
+#         If it picks up an item while holding an item, it swaps
+#     It can compare the item with the item in front of it
+#     It can turn a light on or off
+
+# PLAN
+# Define the length of the list
+#split the list into left and right sides
+# if the lenght of the list is more than 1 on either side
+    # recursivly split the list 
+# implement a merge helper once the list is reduced to a smaller collection of list with a lenght of 1 each
+    #the merge heler will compare two list and add the smallest value to a new list
+    #this will recurse until the list is sorted
+
     def sort(self):
         """
         Sort the robot's list.
